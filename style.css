@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background: #F3F3F3;
+    background-position: top;
+    line-height: 1.5;
+    font-weight: 400;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 28px;
+}
+
+a {
+    color: #193978;
+}
+
+a.button {
+    background: white;
+    color: black;
+    padding: 8px 24px;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: fit-content;
+    transition: .2s ease all;
+}
+
+a.button:hover {
+    background-color: black;
+    color: white;
+    transition: .2s ease all;
+}
+
+.container {
+    background: white;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header .issue {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .issue *:first-child {
+    margin-bottom: 16px;
+}
+
+.header p.title {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.075em;
+    margin: 40px auto;
+}
+
+.articles {
+    margin: 40px auto;
+}
+
+.article {
+    color: white;
+    padding: 24px 16px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article h2 {
+    margin-bottom: 24px;
+}
+
+.article.half h2 {
+    max-width: 90%;
+}
+
+footer {
+    text-align: center;
+}
+
+footer *:not(:last-child){
+    margin-bottom: 16px;
+}
+
+footer a.social {
+    color: black;
+    font-size: 24px;
+}
+
+footer div.social a.social:not(:first-child) {
+    margin-left: 12px;
+}
+
+footer ul.links {
+    list-style: none;
+    font-size: 14px;
+}
+
+footer ul.links li {
+    display: inline;
+}
+
+footer ul.links li + li::before {
+    content: " | ";
+    margin: 0 4px;
+}
+
+footer ul.links li a {
+    color: black;
+    text-decoration: none;
+}
+
+@media(min-width:768px) {
+    .container {
+        width: 600px;
+        padding: 40px;
+        margin: 80px auto;
+    }
+
+    .article {
+        padding: 40px;
+    }
+
+    .header .issue {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .article.half {
+        width: 220px;
+        justify-content:flex-end;
+    }
+
+    .article h2 {
+        max-width: 70%;
+    }
+}
+
+@media(max-width:767px) {
+    .article.full {
+        background-image: none !important;
+    }
+}
