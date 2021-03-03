@@ -3,7 +3,7 @@ A modern email newsletter template with a basic grid design using flexbox
 
 See the live demo [here](https://modern-grid-email.netlify.app/)
 
-The figma file can be downloaded on Unsplash
+The figma file can be downloaded on Uplabs
 
 Font(s) used : [Inter](https://fonts.google.com/specimen/Inter?preview.text_type=custom) by Rasmus Andersson
 

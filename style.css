@@ -85,7 +85,7 @@ a.button:hover {
     justify-content: center;
 }
 
-.article h2 {
+.article *:not(:last-child) {
     margin-bottom: 24px;
 }
 
@@ -129,6 +129,16 @@ footer ul.links li a {
     text-decoration: none;
 }
 
+.black {
+    color: black;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media(min-width:768px) {
     .container {
         width: 600px;
@@ -157,6 +167,10 @@ footer ul.links li a {
 
     .article h2 {
         max-width: 70%;
+    }
+
+    .article.full p {
+        max-width: 75%;
     }
 }
 
